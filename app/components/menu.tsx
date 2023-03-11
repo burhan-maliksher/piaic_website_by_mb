@@ -31,7 +31,7 @@ export default function Menu() {
             }
         </div>
         
-        <div className={`${displayMenu}  flex-col text-3xl mt-4 md:mt-8  md:text-6xl text-center z-2 fixed bg-cyan_cust_light h-screen w-screen`}>
+        <div className={`${displayMenu}  flex-col text-3xl -mt-20 pt-20   md:text-6xl text-center z-1  bg-cyan_cust_light h-screen w-screen`}>
             
             <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>Home</Link>
             <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>About</Link>
