@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import {MenuIcon, PiaicLogo} from './icons'
 
 export default function Homediv() {
   return (
