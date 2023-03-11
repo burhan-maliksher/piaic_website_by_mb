@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import { President } from './icons'
+import { President } from '../icons'
 
-export default function Homediv() {
+export default function Section1() {
   return (
-    <div className='flex flex-col text-center overflow-hidden '>
-      {/* home page first div */}
+    <div>
+            {/* home page first div */}
      <div className='h-72 flex flex-col justify-end  text-cyan_cust_dark bg-cyan_cust_light border-b-8 border-white '>
         
         <div className='flex flex-col justify-end  h-48'>
@@ -38,20 +38,17 @@ export default function Homediv() {
         </div>
       </div>
       {/* home page second div */}
-      <div className='h-auto text-2xl lg:text-5xl text-sky-900 bg-cyan_cust_dark '>
-        <div className='flex flex-col md:flex-row pt-2'>
+      <div className='flex flex-col font-sans text-left md:flex-row pt-2 h-[450px] md:h-60  text-sky-900 bg-cyan_cust_dark '>
           <President/>
-          <p className='mt-0 p-4 font-sans text-left text-xs lg:text-lg '>
+          <div className='mt-0 p-4  text-xs lg:text-lg '>
             <h1 className='font-bold text-lg md:text-4xl '>Presidential Initiative</h1>
             <h2 className='text-base md:text-3xl'>for Artificial Intelligence & Computing (PIAIC)</h2>
             The mission of PIAIC is to reshape Pakistan by revolutionizing education, research, 
             and business by adopting latest, cutting-edge technologies. Experts are calling this
             the 4th industrial revolution. We want Pakistan to become a global hub for AI, data science,
             cloud native computing, edge computing, blockchain, augmented reality, and internet of things.
-            </p>
-        </div>
+            </div>
       </div>
     </div>
   )
 }
-

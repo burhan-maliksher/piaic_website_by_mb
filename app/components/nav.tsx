@@ -1,5 +1,4 @@
 import React from 'react'
-import { PiaicLogo } from './icons'
 import Menu from './menu'
 
 export default function Nav() {
