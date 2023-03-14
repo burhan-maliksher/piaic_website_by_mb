@@ -1,6 +1,7 @@
 import './globals.css'
 import { Iceberg } from 'next/font/google'
-import Nav from './components/nav'
+import Menu from './components/menu'
+import Fotter from './components/fotter'
 
 export const metadata = {
   title: 'Welcome To PIAIC',
@@ -20,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${iceberg.variable} font-iceberg`}>
-      <body >
-        <Nav/>
+    <html lang="en" className={`${iceberg.variable}   font-iceberg`}>
+      <body className='relative p-0 m-0'>
+        <Menu/>
         {children}
+        <Fotter/>
       </body>
     </html>
   )
