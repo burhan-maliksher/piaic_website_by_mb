@@ -35,7 +35,7 @@ export const Blob=()=>{
   initial={{opacity:0}}
   animate={{opacity:1}}
   transition={{delay:3,duration:2,ease:"easeInOut"}}>
-     <Image src={'./assets/Blob.svg'} alt={'icon'} width={0} height={0} className={'w-36 md:w-48  lg:w-56'} />
+     <Image src={'./assets/blob.svg'} alt={'icon'} width={0} height={0} className={'w-36 md:w-48  lg:w-56'} />
   </motion.span>
   )
 }
