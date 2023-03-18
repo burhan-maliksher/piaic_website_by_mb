@@ -6,7 +6,7 @@ import { Arrow, Qoute1, Qoute2 } from './icons'
 export default function Programheading() {
   return (
       <div className='self-center'>
-        <div className='flex gap-2 mt-4 '>
+        <div className='flex gap-2 mt-12 '>
           <Qoute1/>
           <motion.h2 className='font-iceberg text-emerald-300 text-base lg:text-xl self-center drop-shadow-[10px_20px_4px_rgba(255,255,255,1)] shadow-white'
           initial={{opacity:0}}
