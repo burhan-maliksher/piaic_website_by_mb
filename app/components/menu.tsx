@@ -30,6 +30,7 @@ export default function Menu() {
             <PiaicLogo/>
             {displayMenu=='hidden'&&
                 <span onClick={ShowMenu} className=' cursor-pointer'>
+                    {/* <h2 className='text-white p-4 text-xl'>Menu</h2> */}
                     <Image src={'./assets/custom_menu.svg'} alt={'icon'} width={40} height={60} />
                 </span>
             }
@@ -42,11 +43,11 @@ export default function Menu() {
         
         <div className={`${displayMenu} absolute   flex-col text-3xl -mt-20 pt-48   md:text-6xl text-center   bg-cyan_cust_light h-screen w-screen`}>
             
-            <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>Home</Link>
-            <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>About</Link>
-            <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>Programs</Link>
-            <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>How it works</Link>
-            <Link href={''} onClick={CloseMenu} className={'m-2 md:m-4'}>WIT</Link>
+            <Link href={'https://portal.piaic.org/signup'} target={'_blank'} prefetch={false} onClick={CloseMenu} className={'m-2 md:m-4'}>Apply</Link>
+            <Link href={'#1'} target={"_parent"} onClick={CloseMenu} className={'m-2 md:m-4'}>Programs</Link>
+            <Link href={'#about'} target={"_parent"} onClick={CloseMenu} className={'m-2 md:m-4'}>About</Link>
+            <Link href={'#partner'} target={"_parent"} onClick={CloseMenu} className={'m-2 md:m-4'}>Our Partners</Link>
+            <Link href={'#contact'} target={"_parent"} onClick={CloseMenu} className={'m-2 md:m-4'}>Contact US</Link>
         </div>
     </div>
   )

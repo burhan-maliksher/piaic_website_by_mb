@@ -1,12 +1,12 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
-import { Blob, President, Punctuation } from '../icons'
+import { Blob,Punctuation } from '../icons'
 import { motion } from 'framer-motion'
 
 export default function Section1() {
   return (
-     <div className=' bg-gray-900 h-96 flex flex-col justify-end  text-cyan_cust_dark  '>
+     <div className='  h-96 flex flex-col justify-end  text-cyan_cust_dark  '>
         
         <div className=' relative  flex flex-col justify-end h-auto'>
           <div className='mt-20  flex flex-col md:flex-row  justify-center text-2xl  md:mt-24 md:mb-2 lg:text-4xl text-sky-700'>
@@ -39,13 +39,13 @@ export default function Section1() {
               PIAIC
             </motion.p>
             <div className='absolute z-10 self-center '>
-              <motion.button className='z-20 bg-sky-900 rounded-xl py-1 px-4 text-xs lg:text-base lg:py-2 lg:px-12  hover:bg-gradient-to-r from-lime-400 to-teal-400 hover:text-yellow-800 cursor-pointer'
-                // initial={{ opacity:0 }}
-                animate={{  y:[0,-10,-15,-10,-5,0],x:[0,-10,-15,10,15,0] }}
-                transition={{delay:0.2, duration: 2 ,ease:"easeInOut" ,repeat:Infinity}}
-                
+              <motion.button className='z-20 bg-sky-900 rounded-xl py-1 px-4 text-xs lg:text-base lg:py-2 lg:px-12  hover:bg-gradient-to-r from-lime-400 to-teal-400 text-white hover:text-black  cursor-pointer'
+                initial={{ opacity:0 }}
+                animate={{opacity:1}}
+                transition={{delay:0.5, duration: 4 }}
+                whileInView={{  y:[0,-10,-15,-10,-5,0],x:[0,-10,-15,10,15,0] ,transition:{repeat:Infinity,delay:0.2, duration: 2 ,ease:"easeInOut"}}}
               >
-                <Link href={'https://www.piaic.org/'} prefetch={false} target={'_blank'} className={'cursor-pointer'}>
+                <Link href={'https://portal.piaic.org/signup'} prefetch={false} target={'_blank'} className={'cursor-pointer'}>
                   Apply Now
                 </Link>
               </motion.button>

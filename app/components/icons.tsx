@@ -1,6 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -40,75 +41,122 @@ export const Blob=()=>{
 }
 
 
-
-export const President=()=>{
-    return(
-    <span className='h-48 w-48 '>
-      <Image src={'/assets/president.png'} alt={'icon'} width={100} height={80} />
-    </span>
-    )
+export const Bracket=()=>{
+  return(
+  <div className=''>
+    <Image src={'./assets/bracket.svg'} alt={'icon'} width={0} height={0} className='w-16 h-36 ' />
+  </div>
+  )
 }
 
-export const P=()=>{
+export const Underline=()=>{
   return(
-  <span className=' self-end hover:opacity-80  cursor-pointer'>
-    <Image src={'./assets/p.svg'} alt={'icon'} width={200} height={80} />
+  <motion.div className='  '
+    whileInView={{scale:1.1}} 
+    transition={{delay:0.2,duration:0.5}}
+  >
+    <Image src={'./assets/Underline 2.svg'} alt={'icon'} width={0} height={0} className='w-72 md:w-96 lg:w-[700px]' />
+  </motion.div>
+  )
+}
+
+export const Qoute1=()=>{
+  return(
+  <motion.span className=''
+  initial={{opacity:0}}
+  animate={{opacity:1}}
+  transition={{delay:5,duration:2,ease:"easeInOut"}}
+  >
+    <Image src={'./assets/qoute1.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+  </motion.span>
+  )
+}
+export const Qoute2=()=>{
+  return(
+  <motion.span className=''
+  initial={{opacity:0}}
+  animate={{opacity:1}}
+  transition={{delay:5,duration:2,ease:"easeInOut"}}
+  >
+    <Image src={'./assets/qoute2.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+  </motion.span>
+  )
+}
+
+
+export const Whatsapp=()=>{
+  return(
+  <span className=' hover:opacity-80  cursor-pointer'>
+    <Image src={'./assets/whatsapp.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
   </span>
   )
 }
 
-export const I=()=>{
+export const Youtube=()=>{
   return(
-  <span className='  self-end mx-10 hover:opacity-80  cursor-pointer'>
-    <Image src={'./assets/i.svg'} alt={'icon'} width={100} height={80} />
+  <span className=' hover:opacity-80  cursor-pointer'>
+    <Link href={'https://www.youtube.com/channel/UC2Makv_pLAtvrjHNgg-pBLg'} prefetch={false} target={'_blank'}>
+      <Image src={'./assets/youtube.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+    </Link>
   </span>
   )
 }
 
-export const I2=()=>{
+export const Twitter=()=>{
   return(
-  <span className='self-end ml-10'>
-    <Image src={'./assets/i2.svg'} alt={'icon'} width={100} height={80} />
+  <span className=' hover:opacity-80  cursor-pointer'>
+    <Link href={'https://twitter.com/piaicofficial'} prefetch={false} target={'_blank'}>
+      <Image src={'./assets/twitter.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+    </Link>
   </span>
   )
 }
 
-export const I3=()=>{
+export const Linkedin=()=>{
   return(
-  <span className='self-end mb-32 z-1 -ml-24 '>
-    <Image src={'./assets/i3.svg'} alt={'icon'} width={100} height={80} />
+  <span className=' hover:opacity-80  cursor-pointer'>
+    <Link href={'https://www.linkedin.com/company/piaicofficial/'} prefetch={false} target={'_blank'}>
+      <Image src={'./assets/linkedin.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+    </Link>
   </span>
   )
 }
 
-export const A1=()=>{
+export const Facebook=()=>{
   return(
-  <span className='self-end hover:opacity-80  cursor-pointer'>
-    <Image src={'./assets/a1.svg'} alt={'icon'} width={150} height={150} />
+  <span className=' hover:opacity-80  cursor-pointer'>
+    <Link href={'https://www.facebook.com/groups/piaic/'} prefetch={false} target={'_blank'}>
+      <Image src={'./assets/facebook.svg'} alt={'icon'} width={0} height={0} className={'w-10 h-10'} />
+    </Link>
   </span>
   )
 }
 
-export const A2=()=>{
+export const Saylani=()=>{
   return(
-  <span className='self-end z-1 -ml-32 hover:opacity-80  cursor-pointer'>
-    <Image src={'./assets/a2.svg'} alt={'icon'} width={300} height={80} />
-  </span>
+  <motion.span className=' '
+     whileInView={{opacity:[0,1],x:[100,0],transition:{repeat:0,delay:0.2, duration: 2 }}}
+  >
+      <Image src={'/assets/saylaniLogo.png'} alt={'icon'} width={200} height={170}  />
+  </motion.span>
   )
 }
 
-export const C1=()=>{
+export const Panacloud=()=>{
   return(
-  <span className='self-end ml-10 hover:opacity-80  cursor-pointer '>
-    <Image src={'./assets/c1.svg'} alt={'icon'} width={300} height={80} />
-  </span>
+  <motion.span className=' '
+  whileInView={{opacity:[0,1],x:[-100,0],transition:{repeat:0,delay:0.2, duration: 2 }}}
+  
+  >
+      <Image src={'./assets/panacloudLogo.svg'} alt={'icon'} width={100} height={100} className={'w-30 h-10'} />
+  </motion.span>
   )
 }
 
-export const C2=()=>{
+export const Arrow=()=>{
   return(
-  <span className='self-end mb-80 z-1 -ml-60 hover:opacity-80  cursor-pointer'>
-    <Image src={'./assets/c2.svg'} alt={'icon'} width={250} height={80} />
+  <span className='   cursor-pointer'>
+      <Image src={'./assets/Arrow 11.svg'} alt={'icon'} width={100} height={100} className={'w-30 h-10'} />
   </span>
   )
 }
